@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramadan celander</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="header">নামাজের সময় সূচি</div>
+        <div class="main_section">
+          <div class="main-time"><span class="time-now"></span></div>
+          <div class="main-date"><span class="date-now"></span></div>
+          <div class="salad-time">
+            <div>ফজর - <span class="fazar"></span></div>
+            <div>যোহর -<span class="johor"></span></div>
+            <div>আসর -<span class="asor"></span></div>
+            <div>মাগরিব - <span class="magrib"></span></div>
+            <div>এশা -<span class="isha"></span></div>
+            <div class="next-sala">
+              <span class="next-sala-alert"
+                >পরবর্তী নামাজ - <span class="nextSalaName"> :</span>
+                <span class="nextSalaTime"></span
+              ></span>
+            </div>
+          </div>
+        </div>
+        <button class="SetTimeBtn">Set Time</button>
+      </div>
+    </div>
+
+    <div class="main_container">
+      <div class="timeWrapper">
+        <div class="header">নামাজের সময় সেট করণ</div>
+        <div class="fazor">
+          <div>ফজর এর সময় :</div>
+          <span>Hour :</span>
+          <input class="fazorHour" type="text" placeholder="Houres" required />
+          <span>Miniute :</span>
+          <input
+            class="fazorMin"
+            type="text"
+            placeholder="Miniuts"
+            min="1"
+            max="59"
+            required
+          />
+        </div>
+        <div class="fazor">
+          <div>যোহর এর সময় :</div>
+          <span>Hour :</span>
+          <input
+            class="johorMin"
+            type="text"
+            placeholder="Houres"
+            min="1"
+            max="12"
+            required
+          />
+          <span>Miniute :</span>
+          <input
+            class="johorSec"
+            type="text"
+            placeholder="Miniuts"
+            min="1"
+            max="59"
+            required
+          />
+        </div>
+        <div class="fazor">
+          <div>আসর এর সময় :</div>
+          <span>Hour :</span>
+          <input
+            class="asorHour"
+            type="text"
+            placeholder="Houres"
+            min="1"
+            max="12"
+            required
+          />
+          <span>Miniute :</span>
+          <input
+            class="asorMin"
+            type="text"
+            placeholder="Miniuts"
+            min="1"
+            max="59"
+            required
+          />
+        </div>
+        <div class="fazor">
+          <div>মাগরিব এর সময় :</div>
+          <span>Hour :</span>
+          <input
+            class="magribHour"
+            type="text"
+            placeholder="Houres"
+            min="1"
+            max="12"
+            required
+          />
+          <span>Miniute :</span>
+          <input
+            class="magribMin"
+            type="text"
+            placeholder="Miniuts"
+            min="1"
+            max="59"
+            required
+          />
+        </div>
+        <div class="fazor">
+          <div>এশাএর সময় :</div>
+          <span>Hour :</span>
+          <input
+            class="ishaHour"
+            type="text"
+            placeholder="Houres"
+            min="1"
+            max="12"
+            required
+          />
+          <span>Miniute :</span>
+          <input
+            class="ishaMin"
+            type="text"
+            placeholder="Miniuts"
+            min="1"
+            max="59"
+            required
+          />
+        </div>
+
+        <div class="submitBtn">
+          <button>submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
